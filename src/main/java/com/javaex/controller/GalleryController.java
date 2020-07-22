@@ -42,6 +42,7 @@ public class GalleryController {
 		
 		String  savename = galleryService.addList(file, comment, userNo);
 		
+		model.addAttribute(attributeValue)
 
 		System.out.println(file.getOriginalFilename() + "," + comment);
 		
