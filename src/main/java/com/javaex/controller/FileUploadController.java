@@ -23,7 +23,7 @@ public class FileUploadController {
       return "fileupload/form";
    }
    
-   @RequestMapping("/upload")
+   @RequestMapping(value = "/upload", headers = "content-type=multipart/*")
    public String upload(@RequestParam("file") MultipartFile file, Model model) {
       System.out.println("FileUploadController/upload");
       

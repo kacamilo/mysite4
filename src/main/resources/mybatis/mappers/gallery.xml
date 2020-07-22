@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="gallery">
+
+
+	<!-- 글가져오기(리스트만 출력할때) -->
+	<select id="selectList" resultType="com.javaex.vo.GalleryVo">
+		<![CDATA[
+			select  g.no, 
+					g.user_no userNo, 
+					g.saveName, 
+					u.name
+				from 
+					gallery g, users u
+				where 
+					g.user_no = u.no
+		]]>
+	</select>
+
+ 	
+</mapper>

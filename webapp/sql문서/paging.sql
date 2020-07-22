@@ -29,5 +29,12 @@ where r.rn>=1
 and r.rn<=10
 ;
 
+SELECT
+    count(no)
+FROM
+    board;
+
+select count(*)
+			from board;
 -- ÄŞ¸¶ ÆÁ ¾Õ¿¡ ºÙ¿©¼­ È¥¼± ¹æÁö ==>  ,name 
 
